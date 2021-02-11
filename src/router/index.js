@@ -1,20 +1,60 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+
+// import  from '../views/MainHomeView'
+const Home = import ('../views/MainHomeView/Home.vue')
+const Software = import ('../views/MainHomeView/Software.vue')
+const Hardware = import ('../views/MainHomeView/Hardware.vue')
+const Programing = import ('../views/MainHomeView/Programing.vue')
+const HabitAtom = import ('../views/MainHomeView/HabitAtom.vue')
+const CleanCode = import ('../views/MainHomeView/CleanCode.vue')
+const SuperWinner = import ('../views/MainHomeView/SuperWinner.vue')
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta:{transition:"ts-home"},
+      children:[
+          {
+              path: '',
+              name: 'Software',
+              component: Software,
+              meta:{transition:"ts-software"},
+          },
+          {
+              path: 'hardware',
+              name: 'Hardware',
+              component: Hardware,
+              meta:{transition:"ts-hardware"},
+          },
+          {
+              path: 'programing',
+              name: 'Programing',
+              component: Programing,
+              meta:{transition:"ts-programing"},
+          },
+          {
+              path: 'habitAtom',
+              name: 'HabitAtom',
+              component: HabitAtom,
+              meta:{transition:"ts-abitatom"},
+          },
+          {
+              path: 'cleancode',
+              name: 'CleanCode',
+              component: CleanCode,
+              meta:{transition:"ts-cleancode"},
+          },
+          {
+              path: 'superwinner',
+              name: 'SuperWinner',
+              component: SuperWinner,
+              meta:{transition:"ts-superwinner"},
+          },
+      ]
   },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  
 ]
 
 const router = createRouter({
