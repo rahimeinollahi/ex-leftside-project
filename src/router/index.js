@@ -5,9 +5,15 @@ const Home = import ('../views/MainHomeView/Home.vue')
 const Software = import ('../views/MainHomeView/Software.vue')
 const Hardware = import ('../views/MainHomeView/Hardware.vue')
 const Programing = import ('../views/MainHomeView/Programing.vue')
+
 const HabitAtom = import ('../views/MainHomeView/HabitAtom.vue')
 const CleanCode = import ('../views/MainHomeView/CleanCode.vue')
 const SuperWinner = import ('../views/MainHomeView/SuperWinner.vue')
+const ImageView = import ('../views/MainHomeView/ImageView.vue')
+
+const FrontEnd = import ('../views/MainHomeView/FrontEnd.vue')
+const BackEnd = import ('../views/MainHomeView/BackEnd.vue')
+const FullStack = import ('../views/MainHomeView/FullStack.vue')
 
 const routes = [
   {
@@ -51,6 +57,30 @@ const routes = [
               name: 'SuperWinner',
               component: SuperWinner,
               meta:{transition:"ts-superwinner"},
+          },
+          {
+              path: 'imageview',
+              name: 'ImageView',
+              component: ImageView,
+              meta:{transition:"ts-imageview"},
+          },
+          {
+              path: 'frontend',
+              name: 'FrontEnd',
+              component: FrontEnd,
+              meta:{transition:"ts-frontend"},
+          },
+          {
+              path: 'backend',
+              name: 'BackEnd',
+              component: BackEnd,
+              meta:{transition:"ts-backend"},
+          },
+          {
+              path: 'fullstack',
+              name: 'FullStack',
+              component: FullStack,
+              meta:{transition:"ts-fullstack"},
           },
       ]
   },

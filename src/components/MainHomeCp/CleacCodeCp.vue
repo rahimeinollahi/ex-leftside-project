@@ -1,5 +1,6 @@
 <template>
     <div class="continer">
+        <h5 class="text-warning ">This page is not well designed code not writen by v-for(img tag)</h5>
             <div class="row  mt-1">
                 <div class="media border mt-1 p-3 mr-1 col-sm img-parent-hover">
                     <img src="../../assets/photo/1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
