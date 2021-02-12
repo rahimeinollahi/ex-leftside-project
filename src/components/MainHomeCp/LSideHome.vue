@@ -1,5 +1,5 @@
 <template>
-    <div id="bg-leftside" class="continer h-100 ">
+        <div id="bg-leftside" class="continer h-100 fixx-left ">
         <div class="row m-2 " v-for="item in LSideHome" :key="item.id">
                 <h3 @click="item.showHeaders=!item.showHeaders" class="col-sm-12 text-center btn btn-light dropdown-toggle ">{{item.header}}</h3>
                   <ts-side-cp class="col-sm-12">
@@ -25,15 +25,16 @@ import TsSideCp from '../TsSideCp.vue'
 </script>
 
 <style lang="scss" scoped>
+@media screen and(min-width:576px) {
+    .fixx-left{
+    position: fixed;
+        width: 33%;
+          top: 50px;
+}
+}
 @import '../../assets/sass/base/_variable.scss';
 #bg-leftside{
     background-color:$bg-leftside-color;
 }
-// @media screen and(min-width:576px) {
-//           .sticky-left-side {
-//   position: fixed; /* Safari */
-//   position: fixed;
-//   top: 0;
-// } 
-// }
+
 </style>

@@ -4,31 +4,7 @@
         <h3 class="mt-3 text-danger">Junior Developer</h3>
             <h5 class="mt-3 text-dark">rahim einollahi</h5>
         <h5 class="mt-3 text-info">Tel:<small>09147861734</small></h5>
-        <pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <pre id="pre-about">
 
         </pre>
     </div>
@@ -45,4 +21,10 @@
     .about-profile{
         background-color: $side-color-dark;
     }
+
+    // @media screen and(min-width:576px) {
+    //     #pre-about{
+    //         // height: 500px;
+    //     }
+    // }
 </style>

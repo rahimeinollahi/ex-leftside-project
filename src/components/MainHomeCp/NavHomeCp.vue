@@ -1,6 +1,6 @@
 <template>
-    <div id="nav-home" class="continer  ">
-        <div  class="row text-center  ">
+    <div id="nav-home" class="continer nav-fix">
+        <div  class="row text-center ">
 
             <div class="col-sm-6 ">
                 <div class="row">
@@ -41,9 +41,8 @@ import {mapState} from 'vuex'
 
 <style lang="scss" scoped>
 @import '../../assets/sass/base/_variable.scss';
-.sticky-nav{
-    // position: fixed;
-    // top: 0;
+.nav-fix{
+ 
 }
 #txt-search{
     border: 1px solid $br-color;
