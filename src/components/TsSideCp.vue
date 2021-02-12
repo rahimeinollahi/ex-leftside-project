@@ -10,7 +10,7 @@
 
 <script>
     export default {
-        name:'TransionLeftSide',
+        name:'TsSideCp',
     }
 </script>
 

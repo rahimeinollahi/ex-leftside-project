@@ -8,7 +8,7 @@ export default createStore({
    navHomeItems:[
      {id:1,textLink:'Home',router:'/'},
      {id:2,textLink:'About',router:'/about'},
-     {id:3,textLink:'Contact info',router:'/contact-info'},
+     {id:3,textLink:'Contact info',router:'/contactinfo'},
    ],
    LSideHome:[
      {id:1,header:'Computer',showHeaders:true,parts:[
@@ -22,9 +22,9 @@ export default createStore({
        {id:3,headerItem:"Super winner",router:'/superwinner'},
      ]},
      {id:1,header:'Jobs',showHeaders:true,parts:[
-       {id:1,headerItem:"Front-end",router:'/frontend'},
-       {id:2,headerItem:"Back-end",router:'/backend'},
-       {id:3,headerItem:"FullStack",router:'/fullstack'},
+       {id:1,headerItem:"Form 1",router:'/frontend'},
+       {id:2,headerItem:"Form2",router:'/backend'},
+       {id:3,headerItem:"Form video",router:'/fullstack'},
      ]},
    ],
    softwareTable:[
@@ -102,6 +102,17 @@ export default createStore({
      {id:1,lable:'uname',lableText:'UserName',inputClass:"form-control",inputID:'uname',inputPlaceHolder:"Enter UserName",formClass:'form-group',type:'text',},
      {id:2,lable:'pwd',lableText:'password',inputClass:"form-control",inputID:'pwd',inputPlaceHolder:"Enter PassWord",formClass:'form-group',type:'text',},
      {id:2,lable:'num',lableText:'Number',inputClass:"form-control",inputID:'num',inputPlaceHolder:"Enter Number",formClass:'form-group',type:'number',},
+   ],
+   contactInfo:[
+     {id:1,title:'Object oriented programming'},
+     {id:2,title:'Noramlziation'},
+     {id:3,title:'thread'},
+     {id:4,title:'Pipline'},
+   ],
+   paginItem:[
+     {id:1,router:'/'},
+     {id:2,router:'/about'},
+     {id:3,router:'/about'},
    ]
   
   },

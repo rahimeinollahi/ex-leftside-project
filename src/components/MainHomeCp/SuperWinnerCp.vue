@@ -1,6 +1,6 @@
 <template>
     <div class="continer">
-       <span class="text-danger">this page rather well designed prevous page (clean code )write by v-for except img tag</span>
+       <span class="text-danger">this page rather well designed previous page (clean code )write by v-for except img tag</span>
          <div class="row  mt-1 mr-1" v-for="item in superWinner" :key="item.id">
                 <div class="media border mt-1 p-3 mr-1 col-sm img-parent-hover">
                     <router-link to="/imageview">

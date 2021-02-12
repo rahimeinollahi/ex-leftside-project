@@ -1,0 +1,123 @@
+//ts-software
+.ts-software-enter-active,
+.ts-software-leave-active{
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.ts-software-enter-from,
+.ts-software-leave-to{
+  opacity: 0;
+  transform:  translateY(50px);
+}
+//ts-programing
+.ts-hardware-enter-active,
+.ts-hardware-leave-active{
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.ts-hardware-enter-from,
+.ts-hardware-leave-to{
+  opacity: 0;
+  -ms-transform:scale(2);
+  transform:scale(2);
+}
+//ts-programing
+.ts-programing-enter-active,
+.ts-programing-leave-active{
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+.ts-programing-enter-from,
+.ts-programing-leave-to{
+  opacity: 0;
+  opacity: 0;
+  -ms-transform:skewY(50deg);
+  transform:skewY(50deg);
+}
+
+//leftside part 2
+
+//ts habbitatom
+.ts-habitatom-enter-active,
+.ts-habitatom-leave-active{
+  transition: all 0.3s ease-out 0.5s;
+}
+.ts-habitatom-enter-from,
+.ts-habitatom-leave-to{
+  opacity: 0;
+  -ms-transform:scale(2);
+  transform:scale(2);
+}
+
+//ts-cleancode
+.ts-cleancode-enter-active,
+.ts-cleancode-leave-active{
+  transition: all 0.4s ease-in 0.3s;
+}
+.ts-cleancode-enter-from,
+.ts-cleancode-leave-to{
+  opacity: 0;
+  // transform:scale(2);
+}
+
+//ts-super-winner
+.ts-superwinner-enter-active,
+.ts-superwinner-leave-active{
+  transition: all 0.4s ease-in-out 0.4s;
+}
+.ts-superwinner-enter-from,
+.ts-superwinner-leave-to{
+  opacity: 0;
+  // transform:sc
+}
+
+
+//leftside part 3
+
+//ts imageview
+.ts-imageview-enter-active,
+.ts-imageview-leave-active{
+  transition: all 1s;
+}
+.ts-imageview-enter-from,
+.ts-imageview-leave-to{
+  opacity: 0;
+  transform:skewX(50deg);
+}
+
+//ts frontend
+.ts-frontend-enter-active,
+.ts-frontend-leave-active{
+  transition: all 1s;
+}
+.ts-frontend-enter-from,
+.ts-frontend-leave-to{
+  opacity: 0;
+  -ms-transform:skewX(50deg);
+  transform:skewX(50deg);
+}
+
+//ts backend
+.ts-backend-enter-active,
+.ts-backend-leave-active{
+  transition: all 0.5s ease-in 1s;
+}
+.ts-backend-enter-from,
+.ts-backend-leave-to{
+  opacity: 0;
+  -ms-transform:rotate(35deg);
+  transform:rotate(35deg);
+}
+
+
+//ts graphic
+.ts-fullstack-enter-active,
+.ts-fullstack-leave-active{
+  transition: all 0.5s ease-out 0.5s;
+}
+.ts-fullstack-enter-from,
+.ts-fullstack-leave-to{
+  opacity: 0;
+  -ms-transform:translate(50px);
+  transform:translate(50px);
+}

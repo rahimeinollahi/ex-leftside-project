@@ -1,8 +1,15 @@
 <template>
     <div class="continer">
-           <div class="row">
+           <div class="row ">
                <div class="col-sm-4"><l-side-home /></div>
-               <div class="col-sm-8"><router-view /></div>
+
+               <div class="col-sm-8">
+                 <router-view v-slot="{ Component, route }">
+                    <transition :name="route.meta.transition">
+                        <component :is="Component" />
+                  </transition>
+                  </router-view>
+               </div>
         </div>
     </div>
 </template>
@@ -19,3 +26,7 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+
+
+</style>

@@ -15,6 +15,14 @@ const FrontEnd = import ('../views/MainHomeView/FrontEnd.vue')
 const BackEnd = import ('../views/MainHomeView/BackEnd.vue')
 const FullStack = import ('../views/MainHomeView/FullStack.vue')
 
+//About
+const About = import ('../views/FolderAboutView/About.vue')
+
+//contactInfo
+const ContactInfo = import ('../views/ContactView/ContactInfo.vue')
+
+
+
 const routes = [
   {
     path: '/',
@@ -44,7 +52,7 @@ const routes = [
               path: 'habitAtom',
               name: 'HabitAtom',
               component: HabitAtom,
-              meta:{transition:"ts-abitatom"},
+              meta:{transition:"ts-habitatom"},
           },
           {
               path: 'cleancode',
@@ -84,6 +92,18 @@ const routes = [
           },
       ]
   },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
+    meta:{transition:"ts-about"},
+  },
+  {
+    path: '/contactinfo',
+    name: 'ContactInfo',
+    component: ContactInfo,
+    meta:{transition:"ts-contactinfo"},
+  }
   
 ]
 
