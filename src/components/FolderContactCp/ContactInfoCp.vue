@@ -8,11 +8,11 @@
                          <li class="list-group-item list-group-item-action" v-for="item in contactInfo" :key="item.id">{{item.title}}</li>
                 </ol>
             </div> -->
-            <ul class="pagination fixed-bottom">
+            <ul class="pagination  text-center fixed-bottom ">
                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
 
                 <li class="page-item" v-for="sub in paginItem" :key="sub.id">
-                    <router-link class="page-link" :to="{path:sub.router}">{{sub.id}}</router-link>
+                    <router-link class="page-link text-info" :to="{path:sub.router}">{{sub.id}}</router-link>
                 </li>
 
                   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -32,5 +32,7 @@ import {mapState} from 'vuex'
 ul{
     align-items: center;
     justify-content: center;
+    text-align: center;
+   
 }
 </style>

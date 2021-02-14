@@ -1,11 +1,13 @@
 <template>
-    <div>
-        <p>main contact view..</p>
+    <div class="continer">
+        <main-contact-info-cp />
     </div>
 </template>
 
 <script>
+import MainContactInfoCp from '../../components/FolderContactCp/MainContactInfoCp.vue'
     export default {
+  components: { MainContactInfoCp },
         name:'MainContact'
     }
 </script>

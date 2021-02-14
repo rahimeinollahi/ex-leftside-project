@@ -9,7 +9,7 @@ const Programing = import ('../views/MainHomeView/Programing.vue')
 const HabitAtom = import ('../views/MainHomeView/HabitAtom.vue')
 const CleanCode = import ('../views/MainHomeView/CleanCode.vue')
 const SuperWinner = import ('../views/MainHomeView/SuperWinner.vue')
-const ImageView = import ('../views/MainHomeView/ImageView.vue')
+const ImageView = import ('../views/MainHomeView/FolderSuperWinnerView/ImageView.vue')
 
 const FrontEnd = import ('../views/MainHomeView/FrontEnd.vue')
 const BackEnd = import ('../views/MainHomeView/BackEnd.vue')

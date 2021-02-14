@@ -1,13 +1,14 @@
 <template>
     <div class="cotiner">
-        <h3 class="bg-dark text-white">this is only test router link ,  ignore  ui page...</h3>
+            <nav-super-winner-cp />
             <router-link class="card text-center btn btn-link" to="/superwinner"> back</router-link>
-        <img class="img-fluid" src="../../assets/photo/5.jpg" alt="image view page">
     </div>
 </template>
 
 <script>
+import NavSuperWinnerCp from '../../../components/MainHomeCp/FolderSuperWinner/NavSuperWinnerCp.vue'
     export default {
+  components: { NavSuperWinnerCp },
         name:'ImageView'
     }
 </script>

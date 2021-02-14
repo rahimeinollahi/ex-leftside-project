@@ -2,6 +2,8 @@ import { createStore } from 'vuex'
 import actions from './actions';
 import mutations from './mutations'
 // import todos from './moduls/todos';
+import modulA from './Modules/moduleA'
+import modulSW from './Modules/moduleSW'
 
 export default createStore({
   state: {
@@ -123,5 +125,7 @@ export default createStore({
   mutations,
   modules: {
     // todos
+    a:modulA,
+    b:modulSW
   }
 })

@@ -1,13 +1,19 @@
 <template>
     <div class="continer">
-        <p>leftside contact view</p>
-           
+        <left-side-contact-info />   
     </div>
 </template>
 
 <script>
+import LeftSideContactInfo from '../../components/FolderContactCp/LeftSideContactInfo.vue'
+
     export default {
-        name:'LSideContactView'
+        name:'LSideContactView',
+        components:{
+                
+             
+  
+                LeftSideContactInfo      }
     }
 </script>
 
