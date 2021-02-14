@@ -20,6 +20,8 @@ const About = import ('../views/FolderAboutView/About.vue')
 
 //contactInfo
 const ContactInfo = import ('../views/ContactView/ContactInfo.vue')
+const LSideContact = import ('../views/ContactView/LSideContact.vue')
+const MainContact = import ('../views/ContactView/MainContact.vue')
 
 
 
@@ -103,6 +105,16 @@ const routes = [
     name: 'ContactInfo',
     component: ContactInfo,
     meta:{transition:"ts-contactinfo"},
+    children:[
+        {
+            path: '',
+            components:{
+                LSide:LSideContact,
+                MainContact:MainContact
+            } ,
+            meta:{transition:"ts-contactinfo"},
+          },
+    ]
   }
   
 ]

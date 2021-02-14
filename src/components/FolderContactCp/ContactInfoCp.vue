@@ -1,14 +1,14 @@
 <template>
-    <div class="continer">
-        <h2  class="text-info m-3 ">for testing project not work .</h2>
+    <div class="continer ">
+        <!-- <h2  class="text-info m-3 ">for testing project not work .</h2>
         <p class="ml-3 text-danger text center"> Do not pay attention to details html or css ....</p>
         <hr class="bg-danger mx-3">
             <div class="row">
                 <ol class="col-sm text-center">
                          <li class="list-group-item list-group-item-action" v-for="item in contactInfo" :key="item.id">{{item.title}}</li>
                 </ol>
-            </div>
-            <ul class="pagination">
+            </div> -->
+            <ul class="pagination fixed-bottom">
                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
 
                 <li class="page-item" v-for="sub in paginItem" :key="sub.id">
