@@ -3,7 +3,7 @@ const state={
             {id:1,headerLink:'BOOKS',parts:[
                 {id:1,name:'AI',router:'/imageview/'},
                 {id:2,name:'Developer',router:'/imageview/developer'},
-                {id:3,name:'Software Engineer',router:'/imageview/softengineer'},
+                {id:3,name:'Software Engineer',router:'/imageview/softwareengineer'},
             ]}
         ]
 };

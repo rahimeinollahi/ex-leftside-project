@@ -1,6 +1,7 @@
 <template>
     <div class="continer">
        <nav-book />
+       <router-view />
     </div>
 </template>
 

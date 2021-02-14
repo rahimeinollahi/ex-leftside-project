@@ -9,7 +9,13 @@ const Programing = import ('../views/MainHomeView/Programing.vue')
 const HabitAtom = import ('../views/MainHomeView/HabitAtom.vue')
 const CleanCode = import ('../views/MainHomeView/CleanCode.vue')
 const SuperWinner = import ('../views/MainHomeView/SuperWinner.vue')
-const ImageView = import ('../views/MainHomeView/FolderSuperWinnerView/ImageView.vue')
+
+//imageView
+const ImageView = import ('../views/MainHomeView/FolderSuperWinnerView/ImageView.vue');
+const AI = import ('../views/MainHomeView/FolderSuperWinnerView/AI.vue');
+const Developer = import ('../views/MainHomeView/FolderSuperWinnerView/Developer.vue');
+// const Prorammer = import ('../views/MainHomeView/FolderSuperWinnerView/Prorammer.vue');
+const SoftwareEngineer = import ('../views/MainHomeView/FolderSuperWinnerView/SoftwareEngineer.vue');
 
 const FrontEnd = import ('../views/MainHomeView/FrontEnd.vue')
 const BackEnd = import ('../views/MainHomeView/BackEnd.vue')
@@ -73,6 +79,26 @@ const routes = [
               name: 'ImageView',
               component: ImageView,
               meta:{transition:"ts-imageview"},
+              children:[
+                  {
+                    path: '',
+                    name: 'AI',
+                    component: AI,
+                    meta:{transition:"ts-ai"},
+                  },
+                  {
+                    path: 'developer',
+                    name: 'Developer',
+                    component:Developer ,
+                    meta:{transition:"ts-developer"},
+                  },
+                  {
+                    path: 'softwareengineer',
+                    name: 'SoftwareEngineer',
+                    component:SoftwareEngineer ,
+                    meta:{transition:"ts-softwareengineer"},
+                  },
+              ]
           },
           {
               path: 'frontend',
