@@ -1,15 +1,14 @@
 <template>
-    <div class="cotiner">
-            <nav-super-winner-cp />
-            <router-link class="card text-center btn btn-link" to="/superwinner"> back</router-link>
+    <div class="continer">
+       <nav-book />
     </div>
 </template>
 
 <script>
-import NavSuperWinnerCp from '../../../components/MainHomeCp/FolderSuperWinner/NavSuperWinnerCp.vue'
+import NavBook from '../../../components/MainHomeCp/FolderSuperWinner/NavBook.vue'
     export default {
-  components: { NavSuperWinnerCp },
-        name:'ImageView'
+        name:'ImageView',
+        components:{NavBook}
     }
 </script>
 

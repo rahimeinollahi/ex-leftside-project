@@ -3,7 +3,7 @@ import actions from './actions';
 import mutations from './mutations'
 // import todos from './moduls/todos';
 import modulA from './Modules/moduleA'
-import modulSW from './Modules/moduleSW'
+import sw from './Modules/sw'
 
 export default createStore({
   state: {
@@ -126,6 +126,6 @@ export default createStore({
   modules: {
     // todos
     a:modulA,
-    b:modulSW
+    b:sw
   }
 })
