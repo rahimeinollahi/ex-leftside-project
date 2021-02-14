@@ -3,7 +3,11 @@
         <h5 class="text-warning ">This page is not well designed code not writen by v-for(img tag)</h5>
             <div class="row  mt-1">
                 <div class="media border mt-1 p-3 mr-1 col-sm img-parent-hover">
+                    <!-- //first item only test -->
+                    <!-- <img src="../../assets/photo/1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;"> -->
+                    <router-link to="/imageview">
                     <img src="../../assets/photo/1.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                    </router-link>
                     <div class="media-body">
                             <h4>book 1 <small><i> February 19, 2016</i></small></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      

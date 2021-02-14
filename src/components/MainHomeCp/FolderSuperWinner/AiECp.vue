@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>ai cp page</p>
+        <p>ai cp page started</p>
     </div>
 </template>
 

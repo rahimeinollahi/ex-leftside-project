@@ -4,8 +4,9 @@ const state={
                 {id:1,name:'AI',router:'/imageview/'},
                 {id:2,name:'Developer',router:'/imageview/developer'},
                 {id:3,name:'Software Engineer',router:'/imageview/softwareengineer'},
-            ]}
-        ]
+            ]},
+        ],
+        Ai
 };
 const getters={};
 
