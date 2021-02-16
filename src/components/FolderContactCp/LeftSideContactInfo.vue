@@ -4,8 +4,8 @@
             <h3 @click="item.showLink=!item.showLink" class="text-center btn btn-dark btn-block  dropdown-toggle">{{item.headerName}}</h3> 
             <div class="btn-block text-center scroll-leftc" v-if="item.parts">
                 <ts-left-side-contact-cp >
-                    <li class="btn-block text-center" v-if="item.showLink"  >
-                            <a class="btn-block text-center  btn-link"
+                    <li id="lside-maincontact" class="btn-block text-center" v-if="item.showLink"  >
+                            <a class="btn-block text-center  btn-link a-effect a-left-contact a-lside-contact"
                                 :href="'#'+ sub.href"
                                 v-for="sub in item.parts" 
                                 :key="sub"
@@ -20,20 +20,38 @@
 </template>
 
 <script>
-import TsLeftSideContactCp from './TsLeftSideContactCp.vue';
+    import TsLeftSideContactCp from './TsLeftSideContactCp.vue';
+    import $ from 'jquery';
+
+$().ready(function(){
+    $('.a-lside-contact').click(function(){
+        // $('p').animate({letterSpacing: "+=50px"})
+        $('#lside-maincontact').addClass('my-style');
+
+        setTimeout(function(){
+                // $('p').animate({letterSpacing: "-=50px"})
+                $('#lside-maincontact').removeClass('my-style');
+            },450)
+    })
+})
     export default {
         name:'LeftSideContactInfo',
         components:{      
                 TsLeftSideContactCp  },
-            computed:{
+         computed:{
                 getPerson(){
                     return this.$store.state.a.personList;
-                }
-            }
+                },
+            },
     }
 </script>
 
 <style lang="scss" scoped>
+.my-style{
+    transform: scale(2);
+    -ms-transform: scale(2);
+    letter-spacing: 40px;
+}
 @import '../../assets/sass/base/_variable.scss';
 
 @font-face {

@@ -1,11 +1,11 @@
 <template>
     <div>
        <div id="cadd-1" class="row  " v-for="item in getPersonContent" :key="item.id">
-           <h2  class="pl-3 text-info">{{item.headerName}}</h2>
-           <div class="" v-for="sub in item.parts" :key="sub">
+           <h2 class="pl-3 text-info">{{item.headerName}}</h2>
+           <div  class="" v-for="sub in item.parts" :key="sub">
                <hr class="bg-danger mx-2">
-               <h3 class="pl-5">{{sub.customerName}}</h3>
-                   <p :id="sub.href">{{sub.bio}}</p>
+                   <h3  class="pl-5">{{sub.customerName}}</h3>
+                   <p class="p-main-contact" :id="sub.href">{{sub.bio}}</p>
            </div>
            <hr>
        </div>
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
     export default {
         name:"MainContactInfoCp",
         computed:{
@@ -25,6 +24,11 @@
 </script>
 
 <style lang="scss" scoped>
+.my-style{
+    transform: scale(2);
+    -ms-transform: scale(2);
+    letter-spacing: 40px;
+}
 
 @font-face {
     font-family: 'page-contact';

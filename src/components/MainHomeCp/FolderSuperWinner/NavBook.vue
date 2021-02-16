@@ -1,5 +1,5 @@
 <template>
-    <div class="continer">
+    <div id="homepage-ai" class="continer">
         <div class="row">
             <ul class="nav nav-pills col-sm" v-for="item in getNavSW" :key="item.id">
             <li class="nav-item dropdown">

@@ -10,7 +10,7 @@
                 
              <div class="w-100" v-for="sub2 in item.partText" :key="sub2.text" >
                  <hr class="mx-2">
-                 <h4 :id="sub2.id">{{sub2.text}}  <i class="fas fa-heart"> <a href="#home-habbit"> back</a></i></h4>
+                 <h4 :id="sub2.id">{{sub2.text}}  <i class="fas fa-heart"> <a href="#mainhomepage2"> back</a></i></h4>
                  <p class="px-3">{{sub2.content}}</p>
             </div>   
             

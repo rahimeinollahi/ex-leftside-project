@@ -4,7 +4,7 @@
             <hr>
         <div class="row sticky">
             <a
-                    class="col-sm btn btn-secondary mx-2  card text-danger "
+                    class="col-sm btn btn-secondary mx-2  card text-danger a-hardware"
                     id="btn-header"
                     :href="item.href"
                     v-for="item in tableHeaderSection" 
@@ -22,7 +22,19 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import {mapState} from 'vuex';
+// import $ from 'jquery';
+// $().ready(function(){
+//     $('').click(function(){
+//         // $('p').animate({letterSpacing: "+=50px"})
+//         $('#tbl-content').addClass('my-style');
+
+//         setTimeout(function(){
+//                 // $('p').animate({letterSpacing: "-=50px"})
+//                 $('#tbl-content').removeClass('my-style');
+//             },450)
+//     })
+// })
     export default {
         name:'HardwareCp',
         computed:mapState(['tableHeaderSection','tableContent'])
@@ -30,6 +42,11 @@ import {mapState} from 'vuex'
 </script>
 
 <style lang="scss" scoped>
+// .my-style{
+//     transform: scaleX(5);
+//     -ms-transform: scaleX(5);
+//     letter-spacing: 40px;
+// }
 @font-face {
     font-family:'pagefont' ;
     src: url('../../assets/fonts/AlexandriaFLF.ttf');

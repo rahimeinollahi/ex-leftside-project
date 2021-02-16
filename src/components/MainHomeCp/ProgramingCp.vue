@@ -8,7 +8,7 @@
                 <p id="tbl-footer">{{value.contentText}}</p>
             </div>
 
-        <div class="row sticky ">
+        <div class="row sticky a-programing">
             <a id="nav-bottom"
              class=" btn btn-link d-flex justify-content-between" 
              v-for="item in tableFooterSection "
@@ -20,6 +20,19 @@
 </template>
 
 <script>
+// import $ from 'jquery';
+// $().ready(function(){
+//     $('.a-programing').click(function(){
+//         // $('p').animate({letterSpacing: "+=50px"})
+//         $('p').addClass('my-style');
+
+//         setTimeout(function(){
+//                 // $('p').animate({letterSpacing: "-=50px"})
+//                 $('p').removeClass('my-style');
+//             },450)
+//     })
+// })
+
 import {mapState} from 'vuex'
     export default {
         name:'ProgramingCp',
@@ -28,6 +41,12 @@ import {mapState} from 'vuex'
 </script>
 
 <style lang="scss" scoped>
+// .my-style{
+//     // transform: 
+//     // -ms-transform: 
+//     line-height: 200px;
+//     // letter-spacing: 40px;
+// }
 @import '../../assets/sass/base/_variable.scss';
 $tbl-footer-shadow-color-orange:orange;
 $tbl-footer-shadow-color-yellow:yellow;

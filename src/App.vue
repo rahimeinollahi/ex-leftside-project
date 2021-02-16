@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div id="mainhomepage2" class="">
         <nav-home-cp />
   </div>
        <router-view v-slot="{Component,route}">
