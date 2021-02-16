@@ -1,5 +1,6 @@
 <template>
     <div class="continer">
+        <nav-home-cp />
         <contact-info-cp />
         <hr class="hr-info mx-2" >
         <div class="row">
@@ -12,8 +13,9 @@
 
 <script>
 import ContactInfoCp from '../../components/FolderContactCp/ContactInfoCp.vue'
+import NavHomeCp from '../../components/MainHomeCp/NavHomeCp.vue'
     export default {
-  components: { ContactInfoCp },
+  components: { ContactInfoCp, NavHomeCp },
         name:'ContactInfo'
     }
 </script>
