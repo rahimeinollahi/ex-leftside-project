@@ -29,11 +29,21 @@ const ContactInfo = import ('../views/ContactView/ContactInfo.vue')
 const LSideContact = import ('../views/ContactView/LSideContact.vue')
 const MainContact = import ('../views/ContactView/MainContact.vue')
 
+//LogIn view
+const LogIn = import ('../views/LogInView/LogIn.vue')
+
+
 
 
 const routes = [
   {
     path: '/',
+    name: 'LogIn',
+    component: LogIn,
+    meta:{transition:"ts-logIn"},
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home,
     meta:{transition:"ts-home"},
@@ -45,37 +55,37 @@ const routes = [
               meta:{transition:"ts-software"},
           },
           {
-              path: 'hardware',
+              path: '/hardware',
               name: 'Hardware',
               component: Hardware,
               meta:{transition:"ts-hardware"},
           },
           {
-              path: 'programing',
+              path: '/programing',
               name: 'Programing',
               component: Programing,
               meta:{transition:"ts-programing"},
           },
           {
-              path: 'habitAtom',
+              path: '/habitAtom',
               name: 'HabitAtom',
               component: HabitAtom,
               meta:{transition:"ts-habitatom"},
           },
           {
-              path: 'cleancode',
+              path: '/cleancode',
               name: 'CleanCode',
               component: CleanCode,
               meta:{transition:"ts-cleancode"},
           },
           {
-              path: 'superwinner',
+              path: '/superwinner',
               name: 'SuperWinner',
               component: SuperWinner,
               meta:{transition:"ts-superwinner"},
           },
           {
-              path: 'imageview',
+              path: '/imageview',
               name: 'ImageView',
               component: ImageView,
               meta:{transition:"ts-imageview"},
@@ -101,19 +111,19 @@ const routes = [
               ]
           },
           {
-              path: 'frontend',
+              path: '/frontend',
               name: 'FrontEnd',
               component: FrontEnd,
               meta:{transition:"ts-frontend"},
           },
           {
-              path: 'backend',
+              path: '/backend',
               name: 'BackEnd',
               component: BackEnd,
               meta:{transition:"ts-backend"},
           },
           {
-              path: 'fullstack',
+              path: '/fullstack',
               name: 'FullStack',
               component: FullStack,
               meta:{transition:"ts-fullstack"},

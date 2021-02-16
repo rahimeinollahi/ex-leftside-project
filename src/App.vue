@@ -1,6 +1,6 @@
 <template>
   <div id="mainhomepage2" class="">
-        <nav-home-cp />
+        <!-- <nav-home-cp /> -->
   </div>
        <router-view v-slot="{Component,route}">
           <transition :name="route.meta.transition">
@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import NavHomeCp from './components/MainHomeCp/NavHomeCp.vue'
+// import NavHomeCp from './components/MainHomeCp/NavHomeCp.vue'
 export default {
-  components:{NavHomeCp}
+  // components:{NavHomeCp}
 }
 </script>
 

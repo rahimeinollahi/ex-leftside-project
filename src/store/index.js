@@ -8,13 +8,13 @@ import sw from './Modules/sw'
 export default createStore({
   state: {
    navHomeItems:[
-     {id:1,textLink:'Home',router:'/'},
+     {id:1,textLink:'Home',router:'/home'},
      {id:2,textLink:'About',router:'/about'},
      {id:3,textLink:'Contact info',router:'/contactinfo'},
    ],
    LSideHome:[
      {id:1,header:'Computer',showHeaders:true,parts:[
-       {id:1,headerItem:"software",router:'/'},
+       {id:1,headerItem:"software",router:'/home'},
        {id:2,headerItem:"Hardware",router:'/hardware'},
        {id:3,headerItem:"Programing",router:'/programing'},
      ]},
@@ -113,7 +113,7 @@ export default createStore({
    ],
    paginItem:[
      {id:1,router:'/'},
-     {id:2,router:'/about'},
+     {id:2,router:'/home'},
      {id:3,router:'/about'},
    ]
   

@@ -1,5 +1,6 @@
 <template>
     <div class="continer">
+       <nav-home-cp />
            <div class="row ">
                <div class="col-sm-4"><l-side-home /></div>
 
@@ -16,12 +17,15 @@
 
 <script>
 import LSideHome from '../../components/MainHomeCp/LSideHome.vue'
+import NavHomeCp from '../../components/MainHomeCp/NavHomeCp.vue'
 
 
 export default {
   name: 'Home',
   components: {
-    LSideHome
+    LSideHome,
+    // NavHomeC,
+    NavHomeCp
 
   }
 }
